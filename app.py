@@ -134,7 +134,7 @@ def run_fxn():
 st.write(run_fxn())
 
 # Plot
-st.pyplot()
+#st.pyplot()
 
 # DataFrames
 st.dataframe(df)
