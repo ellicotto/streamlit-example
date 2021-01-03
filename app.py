@@ -32,14 +32,17 @@ from PIL import Image
 img = Image.open("example.jpeg")
 st.image(img,width=300, caption="Sample Image")
 
+# Audio
+audio_file = open("samplemusic.mp3", "rb").read()
+st.audio(audio_file, format='audio/mp3', start_time=0)
+
+
 # Videos
 vid_file = open("corona.mp4", "rb").read()
 # vid_bytes = vid_file.read()
 st.video(vid_file)
 
-# Audio
-audio_file = open("samplemusic.mp3", "rb").read()
-st.audio(audio_file, format='audio/mp3', start_time=0)
+
 
 # Widget
 # Checkbox
